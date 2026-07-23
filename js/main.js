@@ -38,6 +38,13 @@
     });
   }
 
+  /* ============ Top promo strip dismiss ============ */
+  const topStrip = $("#topStrip");
+  const topStripClose = $("#topStripClose");
+  if (topStrip && topStripClose) {
+    topStripClose.addEventListener("click", () => topStrip.classList.add("is-hidden"));
+  }
+
   /* ============ Active nav link (current page) ============ */
   const currentFile = (location.pathname.split("/").pop() || "index.html") || "index.html";
   $$(".main-nav a, .mobile-nav a, .app-tabbar-item").forEach((a) => {

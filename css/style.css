@@ -457,20 +457,20 @@ h1,h2,h3,p{ margin:0; }
 .fab-kakao:hover{ transform:scale(1.08); }
 .fab-kakao svg{ width:26px; height:26px; }
 
-/* ===================== Icon quick-access grid (아정당 style) ===================== */
-.icon-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px 8px; }
+/* ===================== Icon quick-access grid (아정당 style: no badge box, colorful icons on white) ===================== */
+.icon-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px 6px; }
 .icon-grid-item{ display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; }
 .icon-grid-badge{
-  width:56px; height:56px; border-radius:18px; display:flex; align-items:center; justify-content:center;
-  color:#fff; transition:transform .25s var(--spring); box-shadow:var(--shadow-sm);
+  width:48px; height:48px; display:flex; align-items:center; justify-content:center;
+  transition:transform .25s var(--spring);
 }
-.icon-grid-item:hover .icon-grid-badge{ transform:translateY(-4px) scale(1.05); }
-.icon-grid-badge svg{ width:26px; height:26px; }
+.icon-grid-item:hover .icon-grid-badge{ transform:translateY(-4px) scale(1.08); }
+.icon-grid-badge svg{ width:40px; height:40px; }
 .icon-grid-item span{ font-size:12.5px; font-weight:700; color:var(--ink-700); }
-.icon-grid-badge.bg-a{ background:linear-gradient(155deg,var(--green-500),var(--green-700)); }
-.icon-grid-badge.bg-b{ background:linear-gradient(155deg,#2DBF9E,#1C8A72); }
-.icon-grid-badge.bg-c{ background:linear-gradient(155deg,var(--gold-400),var(--gold-600)); }
-.icon-grid-badge.bg-d{ background:linear-gradient(155deg,#6FA8DC,#3D6FA8); }
+.icon-grid-badge.bg-a{ color:var(--green-600); }
+.icon-grid-badge.bg-b{ color:#1CA88A; }
+.icon-grid-badge.bg-c{ color:var(--gold-600); }
+.icon-grid-badge.bg-d{ color:#3D6FA8; }
 
 /* ===================== Hero banner card (아정당 style dark inset card) ===================== */
 .hero-banner{
@@ -561,6 +561,33 @@ h1,h2,h3,p{ margin:0; }
 .notif-label{ font-size:11.5px; color:var(--ink-500); font-weight:700; }
 .notif-value{ font-size:14.5px; font-weight:800; color:var(--ink-900); }
 .notif-value strong{ color:var(--green-700); }
+
+/* Top dismissible promo strip (아정당 style) */
+.top-strip{
+  display:flex; align-items:center; justify-content:center; gap:8px; position:relative;
+  background:linear-gradient(90deg,#6C4FD6,#8B6FE8); color:#fff; padding:10px 44px; font-size:13px; font-weight:700; text-align:center;
+}
+.top-strip-close{
+  position:absolute; right:12px; top:50%; transform:translateY(-50%); width:24px; height:24px;
+  display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.85); background:none; border:none;
+}
+.top-strip-close svg{ width:16px; height:16px; }
+.top-strip.is-hidden{ display:none; }
+
+/* Benefit preview card (아정당 "정당하게 받을 수 있는" style: light card + scattered white chips + illustration) */
+.benefit-preview{ background:var(--bg-grey); border-radius:var(--radius-xl); padding:32px 24px 26px; text-align:center; position:relative; overflow:hidden; }
+.benefit-preview h3{ font-size:clamp(19px,4vw,23px); font-weight:800; line-height:1.4; margin-bottom:10px; color:var(--ink-900); }
+.benefit-preview p{ font-size:13.5px; color:var(--ink-500); margin-bottom:24px; }
+.benefit-preview-visual{ position:relative; display:flex; justify-content:center; align-items:center; min-height:150px; margin-bottom:16px; }
+.benefit-preview-chips{ position:absolute; left:6%; top:0; display:flex; flex-direction:column; gap:10px; align-items:flex-start; z-index:2; }
+.benefit-preview-chips .chip-tag{ transform:rotate(-2deg); }
+.benefit-preview-chips .chip-tag:nth-child(2){ transform:rotate(1.5deg); margin-left:14px; }
+.benefit-preview-chips .chip-tag:nth-child(3){ transform:rotate(-1.5deg); margin-left:4px; }
+.benefit-preview-chips .chip-tag:nth-child(4){ transform:rotate(2deg); margin-left:20px; }
+.benefit-preview-bag{ margin-left:auto; margin-right:4%; }
+.benefit-preview-dots{ display:flex; justify-content:center; gap:6px; }
+.benefit-preview-dots span{ width:6px; height:6px; border-radius:50%; background:var(--border); }
+.benefit-preview-dots span:first-child{ width:16px; border-radius:4px; background:var(--green-600); }
 
 /* Contact banner (아정당 "365일 24시간" style) */
 .contact-banner{
