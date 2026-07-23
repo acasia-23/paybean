@@ -188,47 +188,56 @@
   if (reviewsTrack) {
     const sampleReviews = [
       {
+        tag: "월세페이",
         stars: 5,
         date: "2026.07.20",
-        text: "계산기 두드리는 걸 좋아하는 성격이라 시작 전에 시뮬레이션부터 돌렸습니다. 월세 62만에 수수료 약 3만, 카드 적립만 넣으면 근소하게 마이너스였는데 실적으로 연회비 면제받는 것까지 넣으니 플러스로 뒤집히더라고요. 변수 하나로 결론이 바뀌니 다들 본인 조건으로 따져보세요.",
-        meta: "ai****@naver.com",
+        text: "계산기 두드리는 걸 좋아하는 성격이라 시작 전에 시뮬레이션부터 돌렸습니다. 월세 62만에 수수료 약 3만, 카드 적립만 넣으면 근소하게 마이너스였는데 실적으로 연회비 면제받는 것까지 넣으니 플러스로 뒤집히더라고요.",
+        meta: "ai****님 후기 중",
       },
       {
+        tag: "월세페이",
         stars: 5,
         date: "2026.07.18",
-        text: "엄마 환갑 여행 보내드리느라 3월에 지출이 컸는데, 마침 그 달에 자동차 보험 갱신까지 겹쳤습니다. 뭐 하나는 미뤄야 하는 상황에서 월세 77만원을 미루는 게 제일 깔끔했어요. 집주인 눈치 볼 필요 없이 내 카드로 조용히 해결된다는 게 이 서비스의 본질인 듯.",
-        meta: "nr****@hanmail.net",
+        text: "엄마 환갑 여행 보내드리느라 3월에 지출이 컸는데, 마침 그 달에 자동차 보험 갱신까지 겹쳤습니다. 집주인 눈치 볼 필요 없이 내 카드로 조용히 해결된다는 게 이 서비스의 본질인 듯.",
+        meta: "nr****님 후기 중",
       },
       {
+        tag: "인건비·대금페이",
         stars: 5,
         date: "2026.07.15",
-        text: "프리랜서라 인건비 정산할 때마다 엑셀로 따로 정리하는 게 귀찮았는데, 카드결제 내역이 그대로 남으니 세무사한테 넘길 자료 만들기가 훨씬 수월해졌어요. SMS링크로 발주처에서 직접 결제하게 하니 카드번호 주고받을 일도 없고요.",
-        meta: "pk****@gmail.com",
+        text: "프리랜서라 인건비 정산할 때마다 엑셀로 따로 정리하는 게 귀찮았는데, 카드결제 내역이 그대로 남으니 세무사한테 넘길 자료 만들기가 훨씬 수월해졌어요.",
+        meta: "pk****님 후기 중",
       },
       {
+        tag: "인건비·대금페이",
         stars: 4,
         date: "2026.07.11",
-        text: "거래처 대금 620만원을 카드로 돌렸는데 무이자 할부 3개월로 나눠서 자금 압박이 덜했습니다. 세금계산서 처리가 살짝 헷갈려서 고객센터에 문의했는데 답변은 빠르게 왔어요.",
-        meta: "js****@daum.net",
+        text: "거래처 대금 620만원을 카드로 돌렸는데 무이자 할부 3개월로 나눠서 자금 압박이 덜했습니다. 세금계산서 처리가 살짝 헷갈렸는데 고객센터 답변은 빠르게 왔어요.",
+        meta: "js****님 후기 중",
       },
       {
+        tag: "카드단말기",
         stars: 5,
         date: "2026.07.05",
-        text: "가맹점으로 신청해서 카드단말기 설치받았는데, 온라인 결제 건이랑 오프라인 매장 결제 건이 대시보드 하나에서 다 보이니 마감 정산이 훨씬 빨라졌어요. 정산도 10분 안에 들어와서 자금 회전이 편해졌습니다.",
-        meta: "cy****@naver.com",
+        text: "가맹점으로 신청해서 카드단말기 설치받았는데, 온라인·오프라인 결제 건이 대시보드 하나에서 다 보이니 마감 정산이 훨씬 빨라졌어요. 정산도 10분 안에 들어와서 자금 회전이 편해졌습니다.",
+        meta: "cy****님 후기 중",
       },
     ];
+
+    const personIcon =
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/></svg>';
 
     reviewsTrack.innerHTML = sampleReviews
       .map(
         (r) => `
         <div class="review-item">
+          <span class="review-tag-pill">${r.tag}</span>
           <div class="review-top">
             <span class="review-stars" aria-label="${r.stars}점">${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</span>
             <span class="review-date">${r.date}</span>
           </div>
           <p class="review-text">${r.text}</p>
-          <p class="review-meta">${r.meta}</p>
+          <p class="review-meta">${personIcon}${r.meta}</p>
         </div>`
       )
       .join("");
