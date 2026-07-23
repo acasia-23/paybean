@@ -38,6 +38,35 @@
     });
   }
 
+  /* ============ Hero carousel (2 slides, auto + dots) ============ */
+  const heroCarousel = $("#heroCarousel");
+  if (heroCarousel) {
+    const slides = $$(".hero-slide", heroCarousel);
+    const dots = $$("#heroDots button");
+    let heroIndex = 0;
+    let heroTimer;
+
+    function showHeroSlide(i) {
+      heroIndex = i;
+      slides.forEach((s, idx) => s.classList.toggle("is-active", idx === i));
+      dots.forEach((d, idx) => d.classList.toggle("is-active", idx === i));
+    }
+    function nextHeroSlide() {
+      showHeroSlide((heroIndex + 1) % slides.length);
+    }
+    function restartHeroTimer() {
+      clearInterval(heroTimer);
+      heroTimer = setInterval(nextHeroSlide, 4500);
+    }
+    dots.forEach((dot, i) => {
+      dot.addEventListener("click", () => {
+        showHeroSlide(i);
+        restartHeroTimer();
+      });
+    });
+    if (slides.length > 1) restartHeroTimer();
+  }
+
   /* ============ Top promo strip dismiss ============ */
   const topStrip = $("#topStrip");
   const topStripClose = $("#topStripClose");
