@@ -216,18 +216,34 @@
 
 <button class="scroll-top" id="scrollTop" aria-label="맨 위로 이동"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 
-<div class="sticky-bar" id="stickyBar">
-  <div class="sticky-bar-inner">
-    <div class="sticky-bar-info">
-      <span class="sticky-bar-label">인건비·대금 문의</span>
-      <span class="sticky-bar-value" id="stickyBarValue">세금계산서 자동 연동</span>
-    </div>
-    <div class="sticky-bar-actions">
-      <a href="#features" class="btn btn-outline btn-sm">사용해보기</a>
-      <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao btn-sm">문의하기</a>
-    </div>
+<a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="fab-kakao" aria-label="카카오톡 문의">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5c-5.25 0-9.5 3.4-9.5 7.6 0 2.75 1.83 5.16 4.58 6.51-.2.73-.73 2.66-.83 3.07-.13.5.18.5.4.36.17-.12 2.68-1.83 3.8-2.58.5.07.98.11 1.55.11 5.25 0 9.5-3.4 9.5-7.47 0-4.2-4.25-7.6-9.5-7.6Z"/></svg>
+</a>
+
+<nav class="app-tabbar" aria-label="하단 메뉴">
+  <div class="app-tabbar-inner">
+    <a href="index.html" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>
+      <span>홈</span>
+    </a>
+    <a href="index.html#services" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      <span>서비스</span>
+    </a>
+    <a href="index.html#calculator" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V10M12 19V5M20 19v-6"/></svg>
+      <span>계산기</span>
+    </a>
+    <a href="#reviews" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.3l-5.8 3.05 1.1-6.47-4.7-4.58 6.5-.94L12 2.5Z"/></svg>
+      <span>후기</span>
+    </a>
+    <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="app-tabbar-item is-kakao">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5c-5.25 0-9.5 3.4-9.5 7.6 0 2.75 1.83 5.16 4.58 6.51-.2.73-.73 2.66-.83 3.07-.13.5.18.5.4.36.17-.12 2.68-1.83 3.8-2.58.5.07.98.11 1.55.11 5.25 0 9.5-3.4 9.5-7.47 0-4.2-4.25-7.6-9.5-7.6Z"/></svg>
+      <span>문의</span>
+    </a>
   </div>
-</div>
+</nav>
 
 <script src="js/main.js"></script>
 </body>

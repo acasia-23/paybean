@@ -40,7 +40,7 @@
 
   /* ============ Active nav link (current page) ============ */
   const currentFile = (location.pathname.split("/").pop() || "index.html") || "index.html";
-  $$(".main-nav a, .mobile-nav a").forEach((a) => {
+  $$(".main-nav a, .mobile-nav a, .app-tabbar-item").forEach((a) => {
     const href = a.getAttribute("href") || "";
     const hrefFile = href.split("/").pop();
     if (hrefFile === currentFile || (currentFile === "" && hrefFile === "index.html")) {

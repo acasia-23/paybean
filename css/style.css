@@ -430,6 +430,77 @@ h1,h2,h3,p{ margin:0; }
 .sticky-bar-actions{ display:flex; gap:8px; flex:none; }
 .sticky-bar-actions .btn{ width:auto; padding:11px 16px; font-size:13.5px; }
 
+/* ===================== App-style bottom tab bar (아정당 style) ===================== */
+.app-tabbar{
+  position:fixed; left:0; right:0; bottom:0; z-index:185; display:none;
+  background:rgba(255,255,255,.98); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-top:1px solid var(--border); box-shadow:0 -6px 20px rgba(23,62,43,.07);
+  padding-bottom:env(safe-area-inset-bottom);
+}
+.app-tabbar-inner{ display:flex; align-items:stretch; justify-content:space-around; max-width:var(--container); margin-inline:auto; }
+.app-tabbar-item{
+  flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px;
+  padding:9px 2px 8px; color:var(--ink-300); font-size:10.5px; font-weight:700; transition:color .15s;
+}
+.app-tabbar-item svg{ width:22px; height:22px; stroke:currentColor; fill:none; stroke-width:1.8; }
+.app-tabbar-item.is-active{ color:var(--green-600); }
+.app-tabbar-item.is-kakao{ color:var(--ink-300); }
+.app-tabbar-item.is-kakao svg{ fill:currentColor; stroke:none; }
+
+/* Floating kakao chat FAB */
+.fab-kakao{
+  position:fixed; right:18px; bottom:78px; z-index:181;
+  width:52px; height:52px; border-radius:50%; background:#FEE500; color:#191600;
+  display:flex; align-items:center; justify-content:center; box-shadow:var(--shadow-lg);
+  transition:transform .2s var(--spring);
+}
+.fab-kakao:hover{ transform:scale(1.08); }
+.fab-kakao svg{ width:26px; height:26px; }
+
+/* ===================== Icon quick-access grid (아정당 style) ===================== */
+.icon-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px 8px; }
+.icon-grid-item{ display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; }
+.icon-grid-badge{
+  width:56px; height:56px; border-radius:18px; display:flex; align-items:center; justify-content:center;
+  color:#fff; transition:transform .25s var(--spring); box-shadow:var(--shadow-sm);
+}
+.icon-grid-item:hover .icon-grid-badge{ transform:translateY(-4px) scale(1.05); }
+.icon-grid-badge svg{ width:26px; height:26px; }
+.icon-grid-item span{ font-size:12.5px; font-weight:700; color:var(--ink-700); }
+.icon-grid-badge.bg-a{ background:linear-gradient(155deg,var(--green-500),var(--green-700)); }
+.icon-grid-badge.bg-b{ background:linear-gradient(155deg,#2DBF9E,#1C8A72); }
+.icon-grid-badge.bg-c{ background:linear-gradient(155deg,var(--gold-400),var(--gold-600)); }
+.icon-grid-badge.bg-d{ background:linear-gradient(155deg,#6FA8DC,#3D6FA8); }
+
+/* ===================== Hero banner card (아정당 style dark inset card) ===================== */
+.hero-banner{
+  position:relative; overflow:hidden; text-align:left;
+  background:radial-gradient(120% 160% at 100% 0%, var(--green-600), var(--green-800) 55%, var(--green-900) 100%);
+  border-radius:var(--radius-xl); padding:30px 26px 26px; color:#fff;
+  box-shadow:var(--shadow-lg);
+}
+.hero-banner-badge{
+  display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:800; letter-spacing:.02em;
+  color:#fff; background:rgba(255,255,255,.16); padding:6px 14px; border-radius:999px; margin-bottom:14px;
+}
+.hero-banner h1{ color:#fff; font-size:clamp(24px,6vw,32px); line-height:1.32; font-weight:800; letter-spacing:-.02em; margin-bottom:10px; }
+.hero-banner p{ color:rgba(255,255,255,.78); font-size:14.5px; line-height:1.6; margin-bottom:20px; max-width:320px; }
+.hero-banner .btn-pill{
+  display:inline-flex; align-items:center; gap:6px; background:#fff; color:var(--green-800);
+  padding:12px 20px; border-radius:999px; font-weight:800; font-size:14.5px; width:auto;
+}
+.hero-banner-illust{ position:absolute; right:-10px; bottom:-10px; opacity:.9; pointer-events:none; }
+
+/* Chip-style benefit tags (아정당 style scattered pills) */
+.chip-row{ display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
+.chip-tag{
+  display:inline-flex; align-items:center; gap:6px; background:#fff; border:1px solid var(--border);
+  padding:9px 14px; border-radius:999px; font-size:13px; font-weight:700; color:var(--ink-700); box-shadow:var(--shadow-sm);
+}
+.chip-tag strong{ color:var(--green-700); }
+.chip-tag.is-muted{ opacity:.55; }
+.chip-tag.is-muted strong{ color:var(--ink-300); }
+
 /* ===================== Reveal animation ===================== */
 .reveal{ opacity:0; transform:translateY(20px); transition:opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal.is-visible{ opacity:1; transform:translateY(0); }
@@ -479,9 +550,11 @@ h1,h2,h3,p{ margin:0; }
   :root{ --header-h:60px; }
   .section{ padding:56px 0; }
   .dark-section{ padding:56px 0; }
-  body{ padding-bottom:78px; }
-  .sticky-bar{ display:block; }
-  .scroll-top{ bottom:104px; }
+  body{ padding-bottom:64px; }
+  .sticky-bar{ display:none; }
+  .app-tabbar{ display:block; }
+  .fab-kakao{ bottom:74px; }
+  .scroll-top{ bottom:74px; right:78px; width:40px; height:40px; }
   .steps-flow{ gap:2px; }
   .steps-flow-icon{ width:46px; height:46px; }
   .steps-flow-text{ font-size:12px; }
@@ -489,6 +562,8 @@ h1,h2,h3,p{ margin:0; }
 
 @media (min-width:860px){
   .sticky-bar{ display:none; }
+  .app-tabbar{ display:none; }
+  .fab-kakao{ bottom:24px; }
   .scroll-top{ bottom:24px; }
   body{ padding-bottom:0; }
 }

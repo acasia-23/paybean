@@ -56,44 +56,29 @@
 
 <main id="main">
 
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="top">
-    <div class="hero-glow" aria-hidden="true"></div>
-    <div class="container hero-inner">
-      <p class="hero-badge reveal">⚡ 월세 · 인건비 · B2B 정산 카드결제</p>
-      <h1 class="reveal">현금이 필요할 때,<br>카드 한 장이면 <span class="text-accent">충분해요</span></h1>
-      <p class="hero-sub reveal">상대방 동의나 복잡한 절차 없이, 신용카드 결제 후 필요한 곳으로 바로 송금해드려요.</p>
-
-      <div class="hero-illust reveal" aria-hidden="true">
-        <svg viewBox="0 0 320 220" width="300" height="206">
-          <ellipse cx="160" cy="196" rx="120" ry="14" fill="#E3F5E9"/>
-          <g class="float-slow" transform="translate(38,58) rotate(-8)">
-            <rect x="0" y="0" width="150" height="94" rx="14" fill="#38A06A"/>
-            <rect x="0" y="24" width="150" height="14" fill="#173E2B" opacity=".35"/>
-            <circle cx="26" cy="66" r="12" fill="#C7EAD4"/>
-            <rect x="46" y="60" width="46" height="8" rx="4" fill="#F2FAF5" opacity=".8"/>
-            <rect x="46" y="74" width="30" height="6" rx="3" fill="#F2FAF5" opacity=".5"/>
-          </g>
-          <g class="float-med" transform="translate(168,30)">
-            <rect x="0" y="0" width="120" height="76" rx="12" fill="#132018"/>
-            <rect x="12" y="14" width="26" height="18" rx="3" fill="#FBBF24"/>
-            <rect x="12" y="42" width="70" height="6" rx="3" fill="#ffffff" opacity=".7"/>
-            <rect x="12" y="54" width="46" height="6" rx="3" fill="#ffffff" opacity=".4"/>
-          </g>
-          <circle class="float-fast" cx="260" cy="120" r="20" fill="#FBBF24"/>
-          <text class="float-fast" x="260" y="127" text-anchor="middle" font-size="16" font-weight="800" fill="#7A4A0E">₩</text>
-          <circle class="float-med" cx="70" cy="30" r="14" fill="#FDE68A"/>
-          <text class="float-med" x="70" y="35" text-anchor="middle" font-size="12" font-weight="800" fill="#7A4A0E">₩</text>
-          <circle class="float-slow" cx="232" cy="168" r="11" fill="#9DDBB4"/>
-        </svg>
+  <!-- ================= HERO (아정당 스타일 다크 배너 카드) ================= -->
+  <section class="hero" id="top" style="padding-top:20px; padding-bottom:28px;">
+    <div class="container">
+      <div class="hero-banner reveal">
+        <p class="hero-banner-badge">⚡ 월세 · 인건비 · B2B 정산 카드결제</p>
+        <h1>현금이 필요할 때,<br>카드 한 장이면 충분해요</h1>
+        <p>상대방 동의나 복잡한 절차 없이, 신용카드 결제 후 필요한 곳으로 바로 송금해드려요.</p>
+        <a href="#calculator" class="btn btn-pill">내 혜택 확인하기 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+        <div class="hero-banner-illust" aria-hidden="true">
+          <svg viewBox="0 0 160 140" width="140" height="122">
+            <g class="float-slow" transform="translate(10,40) rotate(-8)">
+              <rect x="0" y="0" width="100" height="62" rx="10" fill="rgba(255,255,255,.14)"/>
+              <rect x="0" y="16" width="100" height="10" fill="rgba(255,255,255,.1)"/>
+              <circle cx="18" cy="44" r="8" fill="rgba(255,255,255,.22)"/>
+            </g>
+            <circle class="float-fast" cx="128" cy="34" r="18" fill="#FBBF24"/>
+            <text class="float-fast" x="128" y="40" text-anchor="middle" font-size="15" font-weight="800" fill="#7A4A0E">₩</text>
+            <circle class="float-med" cx="94" cy="14" r="10" fill="#FDE68A"/>
+          </svg>
+        </div>
       </div>
 
-      <div class="hero-actions reveal">
-        <a href="#calculator" class="btn btn-primary btn-lg btn-glow">내 혜택 미리 계산하기</a>
-        <a href="#services" class="btn btn-outline btn-lg">서비스 살펴보기</a>
-      </div>
-
-      <ul class="hero-trust reveal">
+      <ul class="hero-trust reveal" style="margin-top:20px;">
         <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>여신전문금융업 등록 PG·VAN 제휴</li>
         <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>전 카드사 무이자 할부 지원</li>
         <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>10분 이내 빠른 정산</li>
@@ -111,46 +96,38 @@
     </div>
   </section>
 
-  <!-- ================= SERVICE HUB ================= -->
-  <section class="section" id="services">
+  <!-- ================= SERVICE HUB (아정당 스타일 아이콘 그리드) ================= -->
+  <section class="section" id="services" style="padding-top:32px;">
     <div class="container">
-      <div class="section-head reveal">
+      <div class="section-head reveal" style="margin-bottom:24px;">
         <h2>어떤 결제가 필요하세요?</h2>
         <p class="section-sub">상황에 맞는 페이빈 서비스를 선택하면 자세히 안내해드려요.</p>
       </div>
 
-      <div class="hub-grid reveal-stagger">
-        <a href="rent-pay.html" class="hub-card">
-          <span class="hub-card-icon">
+      <div class="icon-grid reveal-stagger">
+        <a href="rent-pay.html" class="icon-grid-item">
+          <span class="icon-grid-badge bg-a">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>
           </span>
-          <h3>월세페이</h3>
-          <p>월세·관리비를 카드로. 집주인 동의 없이, 세액공제와 카드 혜택까지 챙기세요.</p>
-          <span class="hub-card-link">자세히 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          <span>월세페이</span>
         </a>
-        <a href="card-terminal.html" class="hub-card">
-          <span class="hub-card-icon">
+        <a href="card-terminal.html" class="icon-grid-item">
+          <span class="icon-grid-badge bg-b">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
           </span>
-          <h3>카드단말기</h3>
-          <p>매장·사무실 오프라인 결제부터 10분 정산, 365일 연중무휴 처리까지.</p>
-          <span class="hub-card-link">자세히 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          <span>카드단말기</span>
         </a>
-        <a href="manual-payment.html" class="hub-card">
-          <span class="hub-card-icon">
+        <a href="manual-payment.html" class="icon-grid-item">
+          <span class="icon-grid-badge bg-c">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z"/><path d="M15 5l4 4"/></svg>
           </span>
-          <h3>수기·SMS링크결제</h3>
-          <p>카드번호 수기 입력 또는 결제 링크 발송으로, 실물 카드 없이도 결제하세요.</p>
-          <span class="hub-card-link">자세히 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          <span>수기·SMS결제</span>
         </a>
-        <a href="labor-pay.html" class="hub-card">
-          <span class="hub-card-icon">
+        <a href="labor-pay.html" class="icon-grid-item">
+          <span class="icon-grid-badge bg-d">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M2 13h20"/></svg>
           </span>
-          <h3>인건비·대금페이</h3>
-          <p>프리랜서 인건비부터 거래처 대금까지, 세금계산서 연동으로 매끄럽게.</p>
-          <span class="hub-card-link">자세히 보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+          <span>인건비·대금페이</span>
         </a>
       </div>
     </div>
@@ -206,15 +183,9 @@
       <div class="calc-result reveal">
         <p class="calc-result-label">총 예상 혜택 (연)</p>
         <p class="calc-result-total" id="totalBenefit">132만원</p>
-        <div class="calc-result-rows">
-          <div class="calc-result-row" id="taxCreditRow">
-            <span>월세 세액공제 (연)</span>
-            <strong id="taxCreditValue">102만원</strong>
-          </div>
-          <div class="calc-result-row" id="cardBenefitRow">
-            <span>카드 적립 혜택 (연, 예시 5%)</span>
-            <strong id="cardBenefitValue">30만원</strong>
-          </div>
+        <div class="chip-row" style="margin-top:4px;">
+          <span class="chip-tag" id="taxCreditRow">월세 세액공제 <strong id="taxCreditValue">102만원</strong></span>
+          <span class="chip-tag" id="cardBenefitRow">카드 적립(예시 5%) <strong id="cardBenefitValue">30만원</strong></span>
         </div>
       </div>
 
@@ -369,18 +340,34 @@
   <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
 </button>
 
-<div class="sticky-bar" id="stickyBar">
-  <div class="sticky-bar-inner">
-    <div class="sticky-bar-info">
-      <span class="sticky-bar-label">예상 혜택 (연)</span>
-      <span class="sticky-bar-value" id="stickyBarValue">132만원</span>
-    </div>
-    <div class="sticky-bar-actions">
-      <a href="#calculator" class="btn btn-outline btn-sm">사용해보기</a>
-      <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao btn-sm">문의하기</a>
-    </div>
+<a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="fab-kakao" aria-label="카카오톡 문의">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5c-5.25 0-9.5 3.4-9.5 7.6 0 2.75 1.83 5.16 4.58 6.51-.2.73-.73 2.66-.83 3.07-.13.5.18.5.4.36.17-.12 2.68-1.83 3.8-2.58.5.07.98.11 1.55.11 5.25 0 9.5-3.4 9.5-7.47 0-4.2-4.25-7.6-9.5-7.6Z"/></svg>
+</a>
+
+<nav class="app-tabbar" aria-label="하단 메뉴">
+  <div class="app-tabbar-inner">
+    <a href="index.html" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h5v-6h4v6h5V10"/></svg>
+      <span>홈</span>
+    </a>
+    <a href="#services" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+      <span>서비스</span>
+    </a>
+    <a href="#calculator" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V10M12 19V5M20 19v-6"/></svg>
+      <span>계산기</span>
+    </a>
+    <a href="#reviews" class="app-tabbar-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l2.9 5.88 6.5.94-4.7 4.58 1.1 6.47L12 17.3l-5.8 3.05 1.1-6.47-4.7-4.58 6.5-.94L12 2.5Z"/></svg>
+      <span>후기</span>
+    </a>
+    <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="app-tabbar-item is-kakao">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5c-5.25 0-9.5 3.4-9.5 7.6 0 2.75 1.83 5.16 4.58 6.51-.2.73-.73 2.66-.83 3.07-.13.5.18.5.4.36.17-.12 2.68-1.83 3.8-2.58.5.07.98.11 1.55.11 5.25 0 9.5-3.4 9.5-7.47 0-4.2-4.25-7.6-9.5-7.6Z"/></svg>
+      <span>문의</span>
+    </a>
   </div>
-</div>
+</nav>
 
 <script src="js/main.js"></script>
 </body>
