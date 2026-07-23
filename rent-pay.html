@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>월세페이 | 페이빈 PayBean</title>
+<meta name="description" content="월세·관리비를 신용카드로. 집주인 동의 없이, 세액공제와 카드 혜택까지 챙기는 페이빈 월세페이.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2338A06A'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">본문 바로가기</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="페이빈 홈으로">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="30" height="30" rx="9" fill="#38A06A"/>
+          <path d="M9 20.5V9.5C9 9.5 11 8.7 14.5 9.3C18.7 10 20.8 13 19.7 16C18.7 18.7 15.6 19.6 13 18.7C11.8 18.3 11 17.5 11 17.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">페이빈</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="주요 메뉴">
+      <a href="index.html">홈</a>
+      <a href="rent-pay.html">월세페이</a>
+      <a href="card-terminal.html">카드단말기</a>
+      <a href="manual-payment.html">수기결제</a>
+      <a href="labor-pay.html">인건비·대금페이</a>
+    </nav>
+    <div class="header-actions">
+      <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao">카톡 문의</a>
+      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">홈</a>
+    <a href="rent-pay.html">월세페이</a>
+    <a href="card-terminal.html">카드단말기</a>
+    <a href="manual-payment.html">수기결제</a>
+    <a href="labor-pay.html">인건비·대금페이</a>
+    <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao mobile-cta">카톡으로 문의하기</a>
+  </div>
+</header>
+<div class="nav-scrim" id="navScrim"></div>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="hero-badge reveal">🏠 월세 · 관리비 카드결제</p>
+      <h1 class="reveal">월세, 그냥 내지 말고<br><span class="text-accent">혜택까지</span> 챙기세요</h1>
+      <p class="hero-sub reveal">집주인 동의 없이, 신용카드로 월세를 결제하면 계좌로 바로 송금해드려요. 세액공제와 카드 혜택은 그대로 챙기고요.</p>
+      <div class="hero-actions reveal">
+        <a href="#calculator" class="btn btn-primary btn-lg btn-glow">내 혜택 계산하기</a>
+        <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-outline btn-lg">카톡으로 문의하기</a>
+      </div>
+      <ul class="hero-trust reveal">
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>임대차 계약서만 있으면 신청 가능</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>아파트·빌라·오피스텔·원룸 모두 OK</li>
+        <li><svg class="ic" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>매달 자동으로 결제·송금</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="strip">
+    <div class="container strip-inner">
+      <p class="strip-item"><strong>집주인 동의</strong> 필요 없음</p>
+      <p class="strip-item"><strong>최대 12개월</strong> 무이자 할부</p>
+      <p class="strip-item"><strong>최대 170만원</strong> 세액공제</p>
+      <p class="strip-item"><strong>당일</strong> 송금 처리</p>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2>월세페이가 다른 이유</h2>
+      </div>
+      <div class="stack-list reveal-stagger">
+        <article class="stack-card">
+          <span class="stack-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          </span>
+          <span class="stack-body">
+            <strong>집주인 동의 없이</strong>
+            <p>임대차 계약서 정보만 등록하면 끝. 별도 연락이나 동의 절차가 필요 없어요.</p>
+          </span>
+        </article>
+        <article class="stack-card">
+          <span class="stack-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </span>
+          <span class="stack-body">
+            <strong>매달 자동 결제</strong>
+            <p>납부일을 등록하면 매달 자동으로 카드결제 후 임대인 계좌로 송금돼요.</p>
+          </span>
+        </article>
+        <article class="stack-card">
+          <span class="stack-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg>
+          </span>
+          <span class="stack-body">
+            <strong>무이자 할부 &amp; 포인트</strong>
+            <p>최대 12개월 무이자 할부, 카드사 포인트·캐시백까지 그대로 인정돼요.</p>
+          </span>
+        </article>
+        <article class="stack-card">
+          <span class="stack-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+          </span>
+          <span class="stack-body">
+            <strong>세액공제는 그대로</strong>
+            <p>카드로 내도 월세 세액공제 조건은 그대로 유지돼요. 최대 170만원까지.</p>
+          </span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2 class="on-dark">최대 170만원<br>세액공제 받을 수 있어요</h2>
+        <p class="section-sub on-dark-sub">내가 낸 월세 천만 원까지 세액공제를 받아요</p>
+      </div>
+      <div class="stack-list reveal-stagger">
+        <article class="dark-card">
+          <span class="dark-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span class="dark-card-body"><strong>총 급여 5,500만원 이하</strong><p>월세의 17% 세액공제 · 월 50만원이면 연 102만원 환급</p></span>
+        </article>
+        <article class="dark-card">
+          <span class="dark-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span class="dark-card-body"><strong>총 급여 5,500만원 초과 ~ 8,000만원 이하</strong><p>월세의 15% 세액공제 · 월 50만원이면 연 90만원 환급</p></span>
+        </article>
+        <article class="dark-card">
+          <span class="dark-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>
+          <span class="dark-card-body"><strong>총 급여 8,000만원 초과</strong><p>카드 소득공제 적용 · 신용카드 사용액 일부 공제 가능</p></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="calculator">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2>내가 받게 될 혜택,<br>미리 알아볼 수 있어요</h2>
+      </div>
+
+      <div class="calc-result reveal">
+        <p class="calc-result-label">총 예상 혜택 (연)</p>
+        <p class="calc-result-total" id="totalBenefit">132만원</p>
+        <div class="calc-result-rows">
+          <div class="calc-result-row" id="taxCreditRow">
+            <span>월세 세액공제 (연)</span>
+            <strong id="taxCreditValue">102만원</strong>
+          </div>
+          <div class="calc-result-row" id="cardBenefitRow">
+            <span>카드 적립 혜택 (연, 예시 5%)</span>
+            <strong id="cardBenefitValue">30만원</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-inputs reveal">
+        <div class="calc-field">
+          <span class="calc-field-label">월세 금액</span>
+          <strong class="calc-field-value" id="rentValueLabel">50만원</strong>
+          <input type="range" id="rentSlider" class="range-input" min="200000" max="1000000" step="50000" value="500000" aria-label="월세 금액 슬라이더">
+        </div>
+        <div class="calc-field">
+          <span class="calc-field-label">연 소득 구간</span>
+          <div class="select-wrap">
+            <select id="incomeSelect" aria-label="연 소득 구간 선택">
+              <option value="17">5,500만원 이하</option>
+              <option value="15">5,500만원 초과 ~ 8,000만원 이하</option>
+              <option value="0">8,000만원 초과</option>
+            </select>
+            <svg class="select-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+          </div>
+        </div>
+        <p class="calc-disclaimer" id="calcDisclaimer">위 금액은 국세청 월세 세액공제 기준과 예시 카드 적립률(5%)로 계산한 참고용 수치이며, 카드사·소득 조건에 따라 실제 혜택은 달라질 수 있어요.</p>
+      </div>
+
+      <div class="merchant-cta reveal">
+        <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao">카톡으로 문의하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2>수수료는 더 저렴하게</h2>
+        <p class="section-sub">70만원 결제 기준 예시입니다. 실제 수수료는 결제 방식과 프로모션에 따라 달라질 수 있어요.</p>
+      </div>
+      <div class="fee-compare reveal">
+        <div class="fee-card">
+          <p class="fee-tag">타사 평균</p>
+          <p class="fee-rate" data-count-to="4.9" data-suffix="%">0%</p>
+          <p class="fee-amount">약 34,300원</p>
+        </div>
+        <div class="fee-card fee-card-mine">
+          <span class="fee-badge">수수료 할인</span>
+          <p class="fee-tag">페이빈 (프로모션가 예시)</p>
+          <p class="fee-rate" data-count-to="2.5" data-suffix="%">0%</p>
+          <p class="fee-amount">약 17,500원</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2>3단계로 끝나는 간편한 납부</h2>
+      </div>
+      <div class="steps-flow reveal">
+        <div class="steps-flow-item">
+          <span class="steps-flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/></svg></span>
+          <span class="steps-flow-label">STEP 1</span>
+          <span class="steps-flow-text">월세·계좌<br>정보 입력</span>
+        </div>
+        <div class="steps-flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+        <div class="steps-flow-item">
+          <span class="steps-flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></svg></span>
+          <span class="steps-flow-label">STEP 2</span>
+          <span class="steps-flow-text">카드로<br>결제</span>
+        </div>
+        <div class="steps-flow-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+        <div class="steps-flow-item">
+          <span class="steps-flow-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7Z"/></svg></span>
+          <span class="steps-flow-label">STEP 3</span>
+          <span class="steps-flow-text">집주인 계좌로<br>자동 송금</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="reviews">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2>이용후기</h2>
+        <p class="section-sub sample-notice">※ 서비스 오픈을 준비 중인 페이빈의 디자인 목적 예시 후기입니다. 실제 이용자 후기가 아니며, 서비스 오픈 후 실제 후기로 교체될 예정이에요.</p>
+      </div>
+      <div class="review-summary reveal"><span class="stars">★★★★★</span> 4.9점 <span class="count">(예시 후기)</span></div>
+      <div class="review-list reveal" id="reviewsTrack"></div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head reveal">
+        <h2>자주 하는 질문</h2>
+      </div>
+      <div class="accordion reveal" id="accordion">
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false"><span class="q-badge">Q</span>집주인(임대인)에게 연락이 가나요?<svg class="ic" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="accordion-panel"><p>연락이 가지 않아요. 임대차 계약서 정보만 등록하면 신청하신 이름으로 정확하게 송금해드려요.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false"><span class="q-badge">Q</span>월세 세액공제 조건은 어떻게 되나요?<svg class="ic" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="accordion-panel"><p>총급여 5,500만원 이하는 월세액의 17%, 5,500만원 초과~8,000만원 이하는 15%를 세액공제 받을 수 있어요(연간 월세 지급액 1,000만원 한도).</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false"><span class="q-badge">Q</span>어떤 주거 형태든 신청 가능한가요?<svg class="ic" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="accordion-panel"><p>아파트, 빌라, 오피스텔, 원룸까지 월세로 거주 중이라면 모두 신청 가능해요.</p></div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-trigger" aria-expanded="false"><span class="q-badge">Q</span>결제 시 수수료가 따로 있나요?<svg class="ic" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="accordion-panel"><p>결제 금액에 대해 정해진 수수료(부가세 별도)가 부과돼요. 정확한 수수료율은 카톡 상담 시 안내해드려요.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section cta-bold" id="cta">
+    <div class="container cta-inner reveal">
+      <h2>이번 달 월세부터<br>혜택 챙기며 납부해보세요</h2>
+      <p>카카오톡 채널로 편하게 물어보세요.</p>
+      <div class="cta-actions">
+        <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao btn-lg">카카오톡으로 문의하기</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">페이빈</span>
+      <p>㈜페이빈 · 대표 : 홍길동 · 사업자등록번호 : 000-00-00000<br>
+      통신판매업신고 : 제0000-서울강남-00000호 · 주소 : 서울특별시 강남구 테헤란로 000<br>
+      카카오 문의 : 페이빈 채널 (pf.kakao.com/_wVVxnX) · 이메일 : help@paybean.kr</p>
+      <p class="footer-disclaimer">페이빈은 여신전문금융업법을 준수하는 정상적인 재화·용역 거래 대금 결제를 대행하며, 신용카드 현금화(카드깡)와 무관합니다.</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">이용약관</a>
+      <a href="#">개인정보처리방침</a>
+      <a href="card-terminal.html">가맹점 신청</a>
+    </div>
+  </div>
+  <div class="container footer-bottom"><p>© 2026 PayBean Inc. All rights reserved.</p></div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="맨 위로 이동"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<div class="sticky-bar" id="stickyBar">
+  <div class="sticky-bar-inner">
+    <div class="sticky-bar-info">
+      <span class="sticky-bar-label">예상 혜택 (연)</span>
+      <span class="sticky-bar-value" id="stickyBarValue">132만원</span>
+    </div>
+    <div class="sticky-bar-actions">
+      <a href="#calculator" class="btn btn-outline btn-sm">사용해보기</a>
+      <a href="http://pf.kakao.com/_wVVxnX/chat" target="_blank" rel="noopener" class="btn btn-kakao btn-sm">문의하기</a>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
